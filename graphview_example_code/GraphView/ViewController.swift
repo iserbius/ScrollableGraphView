@@ -333,7 +333,9 @@ class ViewController: UIViewController, ScrollableGraphViewDataSource {
         graphView.backgroundFillColor = UIColor.colorFromHex(hexString: "#333333")
         
         graphView.shouldAnimateOnStartup = true
-        
+        graphView.shouldAnimateOnAdapt = true
+        graphView.shouldAdaptRange = true
+        graphView.topMargin = 40
         graphView.rangeMax = 100
         graphView.rangeMin = 0
         
