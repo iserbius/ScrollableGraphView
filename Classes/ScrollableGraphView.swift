@@ -552,7 +552,7 @@ import UIKit
             maxPossible = numberOfPoints - 1
         }
 
-        let numberOfPointsOffscreen = 2
+        let numberOfPointsOffscreen = 0
 
         let actualMin = clamp(value: min - numberOfPointsOffscreen, min: minPossible, max: maxPossible)
         let actualMax = clamp(value: max + numberOfPointsOffscreen, min: minPossible, max: maxPossible)
@@ -574,7 +574,6 @@ import UIKit
 
         let minOfRanges = min(ofAllRanges: ranges)
         let maxOfRanges = max(ofAllRanges: ranges)
-
         return (min: minOfRanges, max: maxOfRanges)
     }
 
